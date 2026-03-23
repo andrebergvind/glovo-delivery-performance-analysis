@@ -28,9 +28,9 @@ The dataset contains 50,000 delivery records and includes information such as:
 
 ## Tools Used
 
-- SQL: data cleaning and analysis
-- Tableau: data visualization 
-- Excel / CSV: data handling and initial exploration
+- SQL: Data cleaning and analysis
+- Tableau: Data visualization 
+- Excel / CSV: Data handling and initial exploration
 
 ## Key Insights
 
