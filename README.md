@@ -51,7 +51,7 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 - Identification of areas with highest late delivery rates
 - Identification of areas with highest delay duration
 
-![Glovo Dashboard](Glovo Dashboard.png)
+![Glovo Dashboard](glovo-dashboard.png)
 
 
 
