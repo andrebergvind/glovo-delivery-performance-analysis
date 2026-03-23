@@ -1,0 +1,112 @@
+
+-- SQL DATA CLEANING - GLOVO ECOMMERCE DATASET
+
+-- Step 1: Create raw table
+-- All columns were defined as TEXT to avoid issues during data importation
+
+CREATE TABLE glovo_raw (
+    order_id TEXT,
+    customer_id TEXT,
+    order_date TEXT,
+    promised_delivery_time TEXT,
+    actual_delivery_time TEXT,
+    delivery_status_x TEXT,
+    order_total TEXT,
+    payment_method TEXT,
+    number_product TEXT,
+    total_quantity TEXT,
+    total_profit TEXT,
+    feedback_id TEXT,
+    rating TEXT,
+    feedback_category TEXT,
+    sentiment TEXT,
+    feedback_date TEXT,
+    customer_name TEXT,
+    area TEXT,
+    pincode TEXT,
+    registration_date TEXT,
+    customer_segment TEXT,
+    total_orders TEXT,
+    avg_order_value TEXT,
+    delivery_partner_id TEXT,
+    promised_time TEXT,
+    actual_time TEXT,
+    delivery_time_minutes TEXT,
+    distance_km TEXT,
+    delivery_status_y TEXT
+);
+
+-- Step 2: Create cleaned working table
+-- This preserved the raw data and allowed transformations on a separate table
+
+CREATE TABLE glovo_clean AS
+SELECT *
+FROM glovo_raw;
+
+-- Step 3: Convert relevant columns to appropriate data types
+
+ALTER TABLE glovo_clean
+ALTER COLUMN order_date TYPE TIMESTAMP USING order_date::timestamp;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN order_total TYPE NUMERIC USING order_total::numeric;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN number_product TYPE INTEGER USING number_product::integer;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN total_quantity TYPE INTEGER USING total_quantity::integer;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN total_profit TYPE NUMERIC USING total_profit::numeric;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN rating TYPE NUMERIC USING rating::numeric;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN delivery_time_minutes TYPE NUMERIC USING delivery_time_minutes::numeric;
+
+ALTER TABLE glovo_clean
+ALTER COLUMN distance_km TYPE NUMERIC USING distance_km::numeric;
+
+-- Step 4: Check for duplicate order_id
+-- No duplicates found, indicating each order_id was unique
+
+SELECT order_id, COUNT(*)
+FROM glovo_clean
+GROUP BY order_id
+HAVING COUNT(*) > 1;
+
+-- Step 5: Remove redundant columns
+-- These columns duplicated timing information and were not needed
+
+ALTER TABLE glovo_clean
+DROP COLUMN promised_time,
+DROP COLUMN actual_time;
+
+-- Step 6: Check for missing values in key fields
+-- No missing values detected
+
+SELECT
+    COUNT(*) FILTER (WHERE order_total IS NULL) AS missing_order_total,
+    COUNT(*) FILTER (WHERE total_profit IS NULL) AS missing_profit,
+    COUNT(*) FILTER (WHERE delivery_time_minutes IS NULL) AS missing_delivery_time
+FROM glovo_clean;
+
+-- Step 7: Create delivery performance column
+-- This allowed the analysis to classify deliveries into Early, On Time, and Late
+
+ALTER TABLE glovo_clean
+ADD COLUMN delivery_performance TEXT;
+
+-- Step 8: Populate delivery performance column
+-- A 4 minute span was used for "On Time" to reflect realistic delivery expectations
+
+UPDATE glovo_clean
+SET delivery_performance =
+CASE
+    WHEN delivery_time_minutes < -2 THEN 'Early'
+    WHEN delivery_time_minutes BETWEEN -2 AND 2 THEN 'On Time'
+    ELSE 'Late'
+END;
+
