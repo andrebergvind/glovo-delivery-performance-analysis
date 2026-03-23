@@ -54,7 +54,7 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 
 ## Recommendations
 
-###Increase courier allocation in areas with high late delivery rates to improve reliability###
+### Increase courier allocation in areas with high late delivery rates to improve reliability ###
   Increase driver supply in underperforming zones. Use demand forecasting to pre-position drivers
   
 - Optimize routing and dispatching strategies in underperforming areas  
