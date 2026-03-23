@@ -54,6 +54,9 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 ![Glovo Dashboard](glovo-dashboard.png)
 
 
+[View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
 
 ## Recommendations
 
