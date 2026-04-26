@@ -6,7 +6,7 @@ This project was developed based on a strong interest in understanding real worl
 
 The analysis focuses on delivery performance data from Glovo (India market), with the aim of identifying key operational challenges affecting delivery reliability and customer satisfaction.
 
-The objective is to uncover patterns in late deliveries, assess their impact on customer ratings, and identify specific areas where operational improvements can be made.
+The objective was to uncover patterns in late deliveries, assess their impact on customer ratings, and identify specific areas where operational improvements can be made.
 
 ## Business Problem
 
@@ -30,14 +30,15 @@ The dataset contains 50,000 delivery records and includes information such as:
 
 ## Tools Used
 
+- Excel / CSV: Data handling and initial exploration
 - SQL: Data cleaning and analysis
 - Tableau: Data visualization 
-- Excel / CSV: Data handling and initial exploration
+
 
 ## Key Insights
 
 - ~49% of deliveries are late, indicating a major operational issue  
-- Late deliveries significantly reduce customer ratings: 4.5 → 3.58
+- Late deliveries significantly reduce customer ratings: 4.5 to 3.58
 - Some areas show consistently high late delivery rates 
 - Other areas experience less frequent but more severe delays
 
@@ -59,6 +60,11 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 [View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
+## Conclusion
+
+The analysis shows that late deliveries is an issue that significantly impacts customer satisfaction.
+
+By focusing on both high frequency delay areas and high severity delay areas, Glovo can implement targeted operational improvements to enhance delivery performance and customer experience.
 
 ## Recommendations
 
@@ -76,13 +82,6 @@ The following recommendations are based on the identified delivery performance p
 - ### Integrate customer ratings as a core operational performance metric
   Use customer ratings as a key KPI to monitor delivery quality. Since late deliveries significantly impact ratings, incorporating this metric into performance tracking can help align operational decisions with customer satisfaction outcomes.
 
-
-
-## Conclusion
-
-The analysis shows that late deliveries is an issue that significantly impacts customer satisfaction.
-
-By focusing on both high frequency delay areas and high severity delay areas, Glovo can implement targeted operational improvements to enhance delivery performance and customer experience.
 
 
 ## Limitations & Further Analysis Opportunities
