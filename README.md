@@ -60,9 +60,11 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 [View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
-## Conclusion
+## Key Insights
 
 The analysis shows that late deliveries is an issue that significantly impacts customer satisfaction.
+
+## Conclusion
 
 By focusing on both high frequency delay areas and high severity delay areas, Glovo can implement targeted operational improvements to enhance delivery performance and customer experience.
 
