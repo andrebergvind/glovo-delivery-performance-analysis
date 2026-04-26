@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project was developed based on a strong interest in understanding real-world business operations and identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
+This project was developed based on a strong interest in understanding real world business operations and identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
 
 The analysis focuses on delivery performance data from Glovo (India market), with the aim of identifying key operational challenges affecting delivery reliability and customer satisfaction.
 
