@@ -31,15 +31,18 @@ The dataset contains 50,000 delivery records and includes information such as:
 ## Tools Used
 
 - Excel / CSV: Data handling and initial exploration
- The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
+
+The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
    
 - SQL: Data cleaning, transformation, and analysis
- SQL was used as the primary tool for data preparation and analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies.
+
+SQL was used as the primary tool for data preparation and analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies.
 In addition, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
 SQL was also used to perform exploratory analysis, aggregations, and segmentation to identify patterns in delivery performance and uncover key operational insights.
 
 - Tableau: Data visualization
- Tableau was used to build interactive dashboards that visualize delivery performance and key metrics.
+
+Tableau was used to build interactive dashboards that visualize delivery performance and key metrics.
 The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
 
 
