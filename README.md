@@ -30,7 +30,8 @@ The dataset contains 50,000 delivery records and includes information such as:
 
 ## Tools Used
 
-- <u>Excel / CSV: Data handling and initial exploration</u> 
+- Excel / CSV: Data handling and initial exploration
+
 The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
    
 - SQL: Data cleaning, transformation, and analysis
