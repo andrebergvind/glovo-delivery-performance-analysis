@@ -60,19 +60,23 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 [View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
-## Key Insights
-
-The analysis shows that late deliveries is an issue that significantly impacts customer satisfaction.
 
 ## Conclusion
 
-By focusing on both high frequency delay areas and high severity delay areas, Glovo can implement targeted operational improvements to enhance delivery performance and customer experience.
+The analysis demonstrates that late deliveries represent a significant operational challenge for Glovo, with approximately 49% of all orders are being delivered after the promised time. 
+This high delay rate has a clear negative impact on customer satisfaction, as reflected in the drop in average ratings from 4.5 on-time/early deliveries to 3.58 late deliveries.
+
+Two distinct patterns in delivery performance were identified. First, certain areas experience consistently high rates of late deliveries, indicating ongoing reliability issues. Second, other areas show lower delay frequency but significantly longer delay durations, suggesting occasional but severe operational breakdowns.
+
+These findings showcase that delivery performance issues are not identical and therefore cannot be addressed through a single solution. Instead, improving delivery performance requires a targeted approach that considers both the frequency and severity of delays.
+
+Overall, the results suggest that by focusing on high risk areas and addressing the underlying operational inefficiencies, Glovo has a strong opportunity to improve delivery reliability, enhance customer satisfaction, and strengthen overall service quality.
 
 ## Recommendations
 
 The following recommendations are based on the identified delivery performance patterns and aim to improve both reliability and customer satisfaction.
 
-- ### Increase courier allocation in high late delivery areas to improve reliability
+- ### Increase courier allocation in high late frequency delivery areas to improve reliability
   Use demand forecasting to better align courier supply with peak order volumes. Pre position drivers in high demand zones to reduce waiting times and improve delivery punctuality. Improving On Time performance is expected to increase customer satisfaction and ratings.
 
 - ### Optimize routing and dispatching strategies in underperforming areas
