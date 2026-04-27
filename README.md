@@ -79,9 +79,10 @@ This high delay rate has a clear negative impact on customer satisfaction, as re
 
 Two distinct patterns in delivery performance were identified. First, certain areas experience consistently high rates of late deliveries, indicating ongoing reliability issues. Second, other areas show lower delay frequency but significantly longer delay durations, suggesting occasional but severe operational breakdowns.
 
-These findings showcase that delivery performance issues are not identical and therefore cannot be addressed through a single solution. Instead, improving delivery performance requires a targeted approach that considers both the frequency and severity of delays.
+These findings showcase that delivery performance issues are not identical and therefore can not be addressed through a single solution. Instead, improving delivery performance requires a targeted approach that considers both the frequency and severity of delays.
 
 Overall, the results suggest that by focusing on high risk areas and addressing the underlying operational inefficiencies, Glovo has a strong opportunity to improve delivery reliability, enhance customer satisfaction, and strengthen overall service quality.
+
 
 ## Recommendations
 
