@@ -98,8 +98,8 @@ The following recommendations are based on the identified delivery performance p
   Areas with extreme delay durations should be analyzed separately to identify root causes such as long distances, traffic bottlenecks, or operational inefficiencies. Implement targeted solutions such as route optimization, delivery zone adjustments, or driver training.
 
 - ### Operationalize customer ratings as a leading performance signal, not just an outcome metric
-Customer ratings should be actively integrated into operational decision making, rather than used solely as a post delivery feedback metric.
-Delivery delays are clearly associated with poorer ratings, according to the data, suggesting that operational performance has a direct impact on customer satisfaction. Glovo could leverage this to detect high risk areas early and prioritise targeted interventions by connecting ratings with delivery time data at the area and time level.
+ Customer ratings should be actively integrated into operational decision making, rather than used solely as a post delivery feedback metric. 
+ Delivery delays are clearly associated with poorer ratings, according to the data, suggesting that operational performance has a direct impact on customer satisfaction. Glovo could leverage this to detect high risk areas early and prioritise targeted interventions by connecting ratings with delivery time data at the area and time level.
 
 
 
