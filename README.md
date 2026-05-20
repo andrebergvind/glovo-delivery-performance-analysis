@@ -21,7 +21,7 @@ Despite the importance of timely deliveries, Glovo has found themselves in a sit
 
 To address this challenge, it is essential to move beyond surface level metrics and understand where delays occur most frequently, how severe they are, and what underlying factors contribute to them.
 
-This analysis is guided by the following key question:
+This analysis was guided by the following main question:
 
 **How can Glovo reduce late deliveries and improve overall delivery performance?**
 
