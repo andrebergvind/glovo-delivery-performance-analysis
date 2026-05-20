@@ -60,15 +60,6 @@ Tableau was used to build interactive dashboards that visualize delivery perform
 The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
 
 
-## Key Insights
-
-- ~49% of deliveries are late, indicating a major operational issue  
-- Late deliveries significantly reduce customer ratings: 4.5 to 3.58
-- Some areas show consistently high late delivery rates 
-- Other areas experience less frequent but more severe delays
-
-The analysis revealed two distinct patterns in delivery performance. Some areas experience a high frequency of late deliveries, indicating reliability issues. Other areas show lower late delivery rates but significantly higher delay durations when delays occur, suggesting occasional but severe operational breakdowns.
-
  ## Dashboard
 
 The Tableau dashboard provides a comprehensive overview of delivery performance, including:
@@ -85,22 +76,43 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 [View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
+## Key Insights
+
+- ~49% of deliveries are late, indicating a major operational issue  
+- Late deliveries significantly reduce customer ratings: 4.5 to 3.58
+- Some areas show consistently high late delivery rates 
+- Other areas experience less frequent but more severe delays
+
+
+## Analysis
+
+The analysis demonstrates that late deliveries represent a significant operational challenge for Glovo, with approximately 49% of all orders being delivered after the promised time. Given the time sensitive nature of Q-Commerce, this indicates a substantial reliability issue that may negatively affect both customer experience and operational performance.
+
+In order to identify potential drivers behind delivery delays, the analysis explored several operational dimensions, including time of day, day of week, order size, and geographic area performance. While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
+
+Instead, the most meaningful insights emerged from the geographic analysis where two distinct patterns were highlighted.
+First, some areas consistently experienced a high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This may indicate structural challenges such as courier supply imbalances, inefficient delivery coverage, or sustained demand pressure within specific zones.
+
+Second, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. This suggests that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Potential contributing factors may include traffic congestion, longer travel distances, routing inefficiencies, or temporary overload during peak demand periods.
+
+These findings become particularly relevant when analyzing customer satisfaction outcomes. The data shows a clear relationship between delivery performance and customer ratings, with average ratings declining from approximately 4.5 for on-time or early deliveries to 3.58 for late deliveries. The dropping customer ratings clearly suggest that delivery reliability is not only an operational KPI, but also a direct driver of customer perception and platform experience.
+
+However, although the analysis was able to identify specific areas associated with poorer delivery performance, the dataset does not allow for definitive conclusions regarding the exact operational causes behind these delays.
+
+One important limitation is that couriers were assigned new identifiers for each individual delivery rather than persistent driver IDs. As a result, it was not possible to evaluate whether delays were linked to specific recurring driver level performance.
+
+Additionally, the dataset did not contain dispatch level information such as courier assignment timing, driver availability, or real-time traffic conditions. This limits the ability to fully explain why certain areas consistently underperform compared to others.
+Therefore, while the analysis successfully identifies where operational challenges are most concentrated and how they impact customer satisfaction, further operational data would be required to determine the precise root causes behind these delivery inefficiencies.
+
+Overall, the analysis suggests that location-based operational performance is one of the strongest indicators of delivery reliability within the dataset. Therefore, by identifying underperforming areas and understanding the nature of their delivery issues, Glovo would be better positioned to prioritize operational improvements and allocate resources more effectively.
+
 
 ## Conclusion
 
-The analysis demonstrates that late deliveries represent a significant operational challenge for Glovo, with approximately 49% of all orders are being delivered after the promised time. 
-This high delay rate has a clear negative impact on customer satisfaction, as reflected in the drop in average ratings from 4.5 on-time/early deliveries to 3.58 late deliveries.
+An important insight from the analysis is that delivery performance issues cannot be approached through a single generalized solution. Different areas appear to experience different types of operational challenges, requiring more targeted interventions depending on whether the primary issue relates to delay frequency, delay severity, or broader operational instability.
 
+What we can establish however, is that these issues certainly affect overall customer satisfaction and reliability.
 As customer satisfaction declines, delivery delays evolve from being purely an operational inefficiency into a broader business risk, which could directly affect customer retention, brand perception, and long term revenue potential.
-
-Following the analysis, two distinct patterns in delivery performance were identified. First, certain areas experience consistently high rates of late deliveries, indicating ongoing reliability issues likely driven by structural inefficiencies such as poor courier allocation or demand imbalances. Second, other areas show lower delay frequency but significantly longer delay durations, suggesting occasional but severe operational breakdowns, potentially linked to routing inefficiencies or peak-time overload.
-
-These findings showcase that delivery performance issues are not identical and therefore can not be addressed through a single solution. Instead, improving delivery performance requires a targeted approach that considers both the frequency and severity of delays across several different areas.
-
-To effectively improve operational performance, Glovo must first pinpoint which areas are underperforming and understand the underlying nature of the issue in each case, as highlighted in the dashboard. This enables more precise and targeted interventions.
-
-Overall, the results suggest that by focusing on high risk areas and addressing the underlying operational inefficiencies, Glovo has a strong opportunity to improve delivery reliability, enhance customer satisfaction, and strengthen overall service quality.
-
 
 ## Recommendations
 
