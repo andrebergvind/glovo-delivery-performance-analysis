@@ -23,13 +23,14 @@ To address this challenge, it is essential to move beyond surface level metrics 
 
 This analysis was guided by the following main question:
 
-**How can Glovo reduce late deliveries and improve overall delivery performance?**
+**How can Glovo reduce late deliveries and ensure customer satisfaction?**
 
-To answer this, the analysis focuses on three supporting questions:
+To answer this, the analysis focused on three supporting questions:
 
-- Where do late deliveries occur most frequently?
-- How severe are delays across different areas?
-- What impact do delivery delays have on customer ratings?
+- Which areas experience the highest share of late deliveries?
+- How do delivery delays impact customer ratings?
+- Which operational patterns are most associated with delayed deliveries?
+
 
 ## Dataset
 
