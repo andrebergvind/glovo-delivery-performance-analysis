@@ -4,9 +4,9 @@
 
 An operations and logistics performance analysis, developed based on a strong interest in understanding real world business operations and how data can be leveraged for identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
 
-The analysis focuses on delivery performance data from Glovo (India market), with the aim of identifying key operational challenges affecting delivery reliability and customer satisfaction.
+The analysis focuses on delivery performance data from Glovo (India market), with the objective of identifying key operational challenges affecting delivery reliability and customer satisfaction.
 
-The objective was to uncover patterns in late deliveries, assess their impact on customer ratings, and identify specific areas where operational improvements can be made.
+Based on the insights derived from the analysis, data-driven recommendations were developed to support operational improvements and performance optimization.
 
 ## Introduction
 
