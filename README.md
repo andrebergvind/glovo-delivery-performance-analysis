@@ -70,7 +70,7 @@ With the data cleaned and transformed, SQL was also used to perform exploratory 
 
 **Tableau**
 
-Tableau was used to build interactive dashboards that visualize delivery performance and key metrics.
+Ultimately, the dataset was transferred into Tableau, which was used to build interactive dashboards that visualize delivery performance and key metrics.
 The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
 Following the discoveries made by the analysis using SQL, the dahsboard focuses on providing insights into the problems most greatly affecting Glovo at this time.
 
