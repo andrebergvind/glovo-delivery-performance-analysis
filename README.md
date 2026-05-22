@@ -58,8 +58,8 @@ The original dataset can be accessed and downloaded here: [Raw Data](https://git
 
 **SQL** 
 
-Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies and duplicates.
-In addition, to facilitate the analysis, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
+Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types and removing inconsistencies and duplicates.
+In addition, to facilitate the analysis, new calculated fields were created, such as delivery time differences and delivery performance categories, (Early, On Time, Late).
 The full SQL cleaning and transformation process can be accessed here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
 
 The transformed dataset can be accessed and downloaded here:
@@ -72,7 +72,7 @@ With the data cleaned and transformed, SQL was also used to perform exploratory 
 
 Ultimately, the dataset was transferred into Tableau, which was used to build interactive dashboards that visualize delivery performance and key metrics.
 The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
-Following the discoveries made by the analysis using SQL, the dahsboard focuses on providing insights into the problems most greatly affecting Glovo at this time.
+Following the discoveries made through the SQL analysis, the dashboard focuses on highlighting the operational areas most greatly affecting delivery performance at this time
 
 
  ## Dashboard
