@@ -61,7 +61,7 @@ In addition, new calculated fields were created, such as delivery time differenc
 The codes used and the reasoning behind them can be found here: The codes used and the reasoning behind them can be found here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
 
 The transformed dataset can be accessed and downloaded here:
-[Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/orders_details_clean_data.csv)
+[Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/glovo_analysis_clean_data.csv)
 
 
 With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentation to identify patterns in delivery performance and uncover key operational insights. The codes used and the reasoning behind them can be found here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
