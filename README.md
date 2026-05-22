@@ -52,7 +52,7 @@ The dataset contains 50,000 delivery records and includes information such as:
 
 The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
 
-The original dataset can be accessed here: [Raw Data](https://github.com/yourusername/glovo-delivery-performance-analysis/blob/main/orders_details_raw_data.csv)
+The original dataset can be accessed here: [Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/orders_details_raw_data.csv)
 
    
 SQL was used as the primary tool for data preparation and analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies.
