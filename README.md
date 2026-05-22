@@ -55,7 +55,7 @@ The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used
 
 The original dataset can be accessed and downloaded here: [Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/orders_details_raw_data.csv)
 
-**SQL**
+**SQL** 
 After the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies and duplicates.
 In addition, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
 The codes used and the reasoning behind them can be found here: The codes used and the reasoning behind them can be found here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
