@@ -60,13 +60,13 @@ The original dataset can be accessed and downloaded here: [Raw Data](https://git
 
 Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies and duplicates.
 In addition, to facilitate the analysis, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
-The SQL cleaning and transformation process can be accessed here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
+The full SQL cleaning and transformation process can be accessed here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
 
 The transformed dataset can be accessed and downloaded here:
 [Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/glovo_analysis_clean_data.csv)
 
 
-With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentation to identify patterns in delivery performance and uncover key operational insights. The SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
+With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentation to identify patterns in delivery performance and uncover key operational insights. Among other factors, the analysis examined the impact of time of day, day of week, and order size on delivery performance. The full SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
 
 **Tableau**
 
