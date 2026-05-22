@@ -53,15 +53,14 @@ The dataset contains 50,000 delivery records and includes information such as:
 **Excel**
 
 The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
-It was discovered that the dataset included duplicate columns regarding 
 
 The original dataset can be accessed and downloaded here: [Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/orders_details_raw_data.csv)
 
 **SQL** 
 
 After the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types, and removing inconsistencies and duplicates.
-In addition, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
-The codes used and the reasoning behind them can be found here: The codes used and the reasoning behind them can be found here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
+In addition, to facilitate the analysis, new calculated fields were created, such as delivery time differences and delivery performance categories, Early, On Time, Late.
+The codes used and the reasoning behind them can be found here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
 
 The transformed dataset can be accessed and downloaded here:
 [Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/glovo_analysis_clean_data.csv)
