@@ -13,7 +13,7 @@ SELECT
     MIN(delivery_time_minutes) AS min_delivery_time,
     MAX(delivery_time_minutes) AS max_delivery_time,
     ROUND(AVG(delivery_time_minutes), 2) AS avg_delivery_time
-FROM glovo_clean;
+FROM glovo_clean
 
 -- Insight:
 -- Deliveries are on average late, with delays reaching up to 30 minutes
@@ -27,7 +27,7 @@ SELECT
     COUNT(*) AS total_orders,
     ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 2) AS percentage
 FROM glovo_clean
-GROUP BY delivery_performance;
+GROUP BY delivery_performance
 
 -- Insight:
 -- Nearly half of all deliveries are late (~49%)
@@ -41,7 +41,7 @@ SELECT
     delivery_performance,
     ROUND(AVG(distance_km), 2) AS avg_distance_km
 FROM glovo_clean
-GROUP BY delivery_performance;
+GROUP BY delivery_performance
 
 -- Insight:
 -- Distance is nearly identical across all categories indicating that its not a driver of delays
@@ -61,7 +61,7 @@ SELECT
     ) AS late_percentage
 FROM glovo_clean
 GROUP BY hour
-ORDER BY hour;
+ORDER BY hour
 
 -- Insight:
 -- Late deliveries remain consistently high throughout the day (47–51%)
@@ -80,7 +80,7 @@ SELECT
     ) AS pct_late
 FROM glovo_clean
 GROUP BY day_name
-ORDER BY pct_late DESC;
+ORDER BY pct_late DESC
 
 -- Insight:
 -- All days fall within a very narrow range (~48–50% late)
@@ -98,7 +98,7 @@ SELECT
 FROM glovo_clean
 WHERE delivery_performance = 'Late'
 GROUP BY month
-ORDER BY month;
+ORDER BY month
 
 -- Insight:
 -- Ratings for late deliveries are stable across months
@@ -112,7 +112,7 @@ SELECT
     delivery_performance,
     ROUND(AVG(total_quantity), 2) AS avg_items
 FROM glovo_clean
-GROUP BY delivery_performance;
+GROUP BY delivery_performance
 
 -- Insight:
 -- Order size is almost identical across categories indicating that its not a driver of delays
@@ -134,7 +134,7 @@ FROM glovo_clean
 GROUP BY area
 HAVING COUNT(*) > 100
 ORDER BY late_percentage DESC
-LIMIT 10;
+LIMIT 10
 
 -- Insight:
 -- Some areas exceed 57–60% late deliveries vs ~ 49% overall
@@ -151,7 +151,7 @@ FROM glovo_clean
 GROUP BY area
 HAVING COUNT(*) > 100
 ORDER BY avg_delay DESC
-LIMIT 10;
+LIMIT 10
 
 -- Insight:
 -- Delay duration is similar across areas (5.7–6.1 min)
@@ -172,7 +172,7 @@ GROUP BY delivery_partner_id;
 SELECT 
     COUNT(DISTINCT delivery_partner_id) AS distinct_partners,
     COUNT(*) AS total_rows
-FROM glovo_clean;
+FROM glovo_clean
 
 -- Insight:
 -- Each partner ID is unique and can therefore not evaluate performance
@@ -187,7 +187,7 @@ SELECT
     ROUND(AVG(rating), 2) AS avg_rating,
     COUNT(*) AS total_orders
 FROM glovo_clean
-GROUP BY delivery_performance;
+GROUP BY delivery_performance
 
 -- Insight:
 -- Late deliveries have significantly lower ratings (3.58 vs 4.50)
