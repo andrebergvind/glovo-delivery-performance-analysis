@@ -34,14 +34,14 @@ CREATE TABLE glovo_raw (
     delivery_time_minutes TEXT,
     distance_km TEXT,
     delivery_status_y TEXT
-);
+)
 
 -- Step 2: Create cleaned working table
 -- This preserved the raw data and allowed transformations on a separate table
 
 CREATE TABLE glovo_clean AS
 SELECT *
-FROM glovo_raw;
+FROM glovo_raw
 
 -- Step 3: Convert relevant columns to appropriate data types
 
@@ -75,14 +75,14 @@ ALTER COLUMN distance_km TYPE NUMERIC USING distance_km::numeric;
 SELECT order_id, COUNT(*)
 FROM glovo_clean
 GROUP BY order_id
-HAVING COUNT(*) > 1;
+HAVING COUNT(*) > 1
 
 -- Step 5: Remove redundant columns
 -- These columns duplicated timing information and were not needed
 
 ALTER TABLE glovo_clean
 DROP COLUMN promised_time,
-DROP COLUMN actual_time;
+DROP COLUMN actual_time
 
 -- Step 6: Check for missing values in key fields
 -- No missing values detected
@@ -97,7 +97,7 @@ FROM glovo_clean;
 -- This allowed the analysis to classify deliveries into Early, On Time, and Late
 
 ALTER TABLE glovo_clean
-ADD COLUMN delivery_performance TEXT;
+ADD COLUMN delivery_performance TEXT
 
 -- Step 8: Populate delivery performance column
 -- A 4 minute span was used for "On Time" to reflect realistic delivery expectations
@@ -108,5 +108,5 @@ CASE
     WHEN delivery_time_minutes < -2 THEN 'Early'
     WHEN delivery_time_minutes BETWEEN -2 AND 2 THEN 'On Time'
     ELSE 'Late'
-END;
+END
 
