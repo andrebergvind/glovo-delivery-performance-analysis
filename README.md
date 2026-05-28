@@ -18,7 +18,7 @@ Based on the insights derived from the analysis, data-driven recommendations wer
 
 [Tools Used](#tools-used)
 
-[Cleaning & Transformation](#cleaning--transformation)
+[Data Cleaning & Transformation](#data-cleaning--transformation)
 
 [Dashboard](#dashboard)
 
