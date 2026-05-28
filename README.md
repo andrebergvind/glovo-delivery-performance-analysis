@@ -8,6 +8,30 @@ The analysis focuses on delivery performance data from Glovo (India market), wit
 
 Based on the insights derived from the analysis, data-driven recommendations were developed to support operational improvements and performance optimization.
 
+## Project Structure
+
+[Introduction](#introduction)
+
+[Business Problem](#business-problem)
+
+[Dataset](#dataset)
+
+[Tools Used](#tools-used)
+
+[Cleaning & Transformation](#cleaning--transformation)
+
+[Dashboard](#dashboard)
+
+[Key Insights](#key-insights)
+
+[Analysis](#analysis)
+
+[Conclusion](#conclusion)
+
+[Recommendations](#recommendations)
+
+[Limitations & Further Analysis Opportunities](#limitations--further-analysis-opportunities)
+
 ## Introduction
 
 In highly competitive, time sensitive marketplaces, delivery reliability is a critical driver of customer satisfaction and platform performance. Even small inefficiencies in operations can scale rapidly, leading to delays, decreased service quality, and potential customer churn.
