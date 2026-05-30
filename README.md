@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-An operations and logistics performance analysis, developed based on a strong interest in understanding real world business operations and how data can be leveraged for identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
+This project presents an operations and logistics performance analysis, developed based on a strong interest in understanding real world business operations and how data can be leveraged for identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
 
 The analysis focuses on delivery performance data from Glovo (India market), with the objective of identifying key operational challenges affecting delivery reliability and customer satisfaction.
 
@@ -37,9 +37,11 @@ Based on the insights derived from the analysis, data-driven recommendations wer
 In highly competitive, time sensitive marketplaces, delivery reliability is a critical driver of customer satisfaction and platform performance. Even small inefficiencies in operations can scale rapidly, leading to delays, decreased service quality, and potential customer churn.
 
 As a leading Q-Commerce platform, Glovo relies heavily on efficient logistics and timely deliveries to maintain a strong customer experience.
-Yet, maintaining consistent delivery performance at scale remains a significant operational challenge, particularly in complex and high demand urban environments.
+Yet, maintaining consistent delivery performance at scale remains a significant operational challenge, particularly in complex and high demand urban environments, as showcased in this analysis.
 
 ## Business Problem
+
+**Scenario**
 
 Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after the promised time, indicating potential inefficiencies within the delivery process. These delays do not only impact immediate service quality but can also weaken customer satisfaction and long term platform performance.
 
@@ -47,7 +49,7 @@ To address this challenge, it is essential to move beyond surface level metrics 
 
 This analysis was guided by the following main question:
 
-**How can Glovo reduce late deliveries and ensure customer satisfaction?**
+**How can Glovo reduce late deliveries and ensure a good customer satisfaction?**
 
 To answer this, the analysis focused on three supporting questions:
 
@@ -55,16 +57,6 @@ To answer this, the analysis focused on three supporting questions:
 - How do delivery delays impact customer ratings?
 - Which operational patterns are most associated with delayed deliveries?
 
-
-## Dataset
-
-The dataset contains 50,000 delivery records and includes information such as:
-
-- Order details: order_id, order_date
-- Customer information: customer_id, customer_segment
-- Delivery data: promised vs actual delivery time, delivery performance
-- Operational metrics: distance, delivery time in minutes, area
-- Customer feedback: rating, sentiment, feedback category
 
 ## Tools Used
 
@@ -76,38 +68,30 @@ The dataset contains 50,000 delivery records and includes information such as:
 
 **Excel**
 
-The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration before moving into a more robust analysis environment.
+The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration including filtering, aggregations, and pivot tables before moving into a more robust analysis environment.
 
 The original dataset can be accessed and downloaded here: [Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/orders_details_raw_data.csv)
 
 **SQL** 
 
-Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types and removing inconsistencies and duplicates.
-In addition, to facilitate the analysis, new calculated fields were created, such as delivery time differences and delivery performance categories, (Early, On Time, Late).
+Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types and removing duplicate columns.
+In addition, to facilitate the analysis, new columns were created, such as delivery time differences and delivery performance categories, (Early, On Time, Late).
 The full SQL cleaning and transformation process can be accessed here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-cleaning)
 
 The transformed dataset can be accessed and downloaded here:
 [Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/glovo_analysis_clean_data.csv)
 
 
-With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentation to identify patterns in delivery performance and uncover key operational insights. Among other factors, the analysis examined the impact of time of day, day of week, and order size on delivery performance. The full SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
+With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentations to identify patterns in delivery performance to uncover key operational insights. Among other factors, the analysis examined the impact of time of day, day of week, and order size on delivery performance. The full SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
 
 **Tableau**
 
 Ultimately, the dataset was transferred into Tableau, which was used to build interactive dashboards that visualize delivery performance and key metrics.
 The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
-Following the discoveries made through the SQL analysis, the dashboard focuses on highlighting the operational areas most greatly affecting delivery performance at this time
+Following the discoveries made through the SQL analysis, the dashboard focuses on highlighting the operational areas most greatly affecting delivery performance at this time.
 
 
  ## Dashboard
-
-The Tableau dashboard provides a comprehensive overview of delivery performance, including:
-
-- KPI summary: Total Orders, Late Delivery Rate, Average Delay, Average Rating
-- Distribution of delivery performance: Early, On Time, Late
-- Impact of delays on customer ratings
-- Identification of areas with highest late delivery rates
-- Identification of areas with highest delay duration
 
 ![Glovo Dashboard](glovo-dashboard.png)
 
@@ -117,11 +101,9 @@ The Tableau dashboard provides a comprehensive overview of delivery performance,
 
 ## Key Insights
 
-- ~49% of deliveries are late, indicating a major operational issue  
-- Late deliveries significantly reduce customer ratings: 4.5 to 3.58
-- Some areas show consistently high late delivery rates 
-- Other areas experience less frequent but more severe delays
-
+- Approximately 49% of orders are delivered later than promised.
+- Late deliveries inevitably affect customer ratings negatively
+- While late deliveries overall represents a problem for Glovo, the analysis reveals that some areas experience them more frequently, while others suffer from more severe delays.
 
 ## Analysis
 
