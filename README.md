@@ -42,7 +42,7 @@ Yet, maintaining consistent delivery performance at scale remains a significant 
 
 ## Business Problem
 
-**Scenario**
+### Scenario
 
 Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after promised delivery time. 
 
