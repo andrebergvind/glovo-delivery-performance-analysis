@@ -119,11 +119,16 @@ In order to identify potential drivers behind these delays, the analysis explore
 While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
 
 Instead, the most meaningful insights derived from the geographic analysis examining delivery performance on an area basis.
-From the geopgraphic analysis, two distinct patterns were highlighted aknowledging some areas 
+Two distinct patterns were became apparent, highlighting that delay issues are not universal but occur in different ways depending on the location.
 
-First, some areas consistently experienced a high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This may indicate structural challenges such as courier supply imbalances, inefficient delivery coverage, or sustained demand pressure within specific zones.
+Primarily, some areas showcased a consistent high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This outcome raised the question of structural challenges such as courier supply imbalances, inefficient delivery coverage, or sustained demand pressure within the specific areas.
 
-Second, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. This suggests that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Potential contributing factors may include traffic congestion, longer travel distances, routing inefficiencies, or temporary overload during peak demand periods.
+In contrast, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. The result suggested that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Unable to pursue the factors causing these issues due to the limitation of data, 
+
+
+contributing factors may include traffic congestion, longer travel distances, routing inefficiencies, or temporary overload during peak demand periods.
+
+
 
 These findings become particularly relevant when analysing customer satisfaction outcomes. The data shows a clear relationship between delivery performance and customer ratings, with average ratings declining from approximately 4.5 for on-time or early deliveries to 3.58 for late deliveries. The dropping customer ratings clearly suggest that delivery reliability is not only an operational KPI, but also a direct driver of customer perception and platform experience.
 
