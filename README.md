@@ -6,7 +6,7 @@ This project presents an operations and logistics performance analysis, develope
 
 The analysis focuses on delivery performance data from Glovo (India market), with the objective of identifying key operational challenges affecting delivery reliability and customer satisfaction.
 
-Based on the insights derived from the analysis, data-driven recommendations were developed to support operational improvements and performance optimization.
+Based on the insights derived from the analysis, data-driven recommendations were developed to support operational improvements and performance optimisation.
 
 ## Project Structure
 
