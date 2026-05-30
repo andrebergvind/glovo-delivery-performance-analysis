@@ -2,11 +2,12 @@
 
 ## Project Overview
 
-This project presents an operations and logistics performance analysis, developed based on a strong interest in understanding real world business operations and how data can be leveraged for identifying opportunities to improve efficiency and performance. The scenario is hypothetical, and the dataset used in this analysis was sourced from Kaggle.
+This project presents an operations and logistics performance analysis. The reason behind it was based on a strong interest in understanding how data can be used to identify operational challenges and uncover opportunities to improve business performance.
 
-The analysis focuses on delivery performance data from Glovo (India market), with the objective of identifying key operational challenges affecting delivery reliability and customer satisfaction.
+Using delivery data from Glovo (India market), sourced from Kaggle, i explore operational patterns with the objective of providing inisghts into the factors driving late deliveries and lower customer ratings.
 
-Based on the insights derived from the analysis, data-driven recommendations were developed to support operational improvements and performance optimisation.
+**The scenario used for the project is hypothetical and was developed solely for educational and portfolio purposes.**
+
 
 ## Project Structure
 
