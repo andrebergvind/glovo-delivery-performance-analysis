@@ -10,7 +10,6 @@ CREATE TABLE glovo_raw (
     order_date TEXT,
     promised_delivery_time TEXT,
     actual_delivery_time TEXT,
-    delivery_status_x TEXT,
     order_total TEXT,
     payment_method TEXT,
     number_product TEXT,
@@ -33,7 +32,6 @@ CREATE TABLE glovo_raw (
     actual_time TEXT,
     delivery_time_minutes TEXT,
     distance_km TEXT,
-    delivery_status_y TEXT
 )
 
 -- Step 2: Create cleaned working table
