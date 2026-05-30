@@ -123,7 +123,9 @@ Two distinct patterns were became apparent, highlighting that delay issues are n
 
 Primarily, some areas showcased a consistent high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This outcome raised the question of structural challenges such as courier supply imbalances and inefficient delivery coverage. However, since courier IDs were identifiers that seemingly were generated for each delivery, these imbalances could not be investigated further.
 
-In contrast, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. The result suggested that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Factors may include traffic congestion, routing inefficiencies, or temporary overload during peak demand periods. Unable to pursue the potential factors causing these issues due to limitation of data, the severity of delays was merely concluded to occur within these areas, yet without being able to determine exactly what they depend on.
+In contrast, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. The result suggested that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Factors may include traffic congestion, routing inefficiencies, or temporary overload during peak demand periods. 
+
+Unable to pursue the potential factors causing these issues due to limitation of data, the severity of delays was merely concluded to occur within these areas, yet without being able to determine exactly what they depend on.
 
 
 ## Conclusion
