@@ -113,16 +113,14 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 
 Glovos current delivery performance is evidentially far below its expectations. Out of 50,000 orders, approximately 49% were recorded as late, meaning that almost one in every second customer receives their order later than promised. 
 
-As a result of late deliveries, the average customer rating inevitably declines. Orders with late deliveries consistently receive lower ratings than early or on-time deliveries.
+As a result of late deliveries, the average customer rating inevitably declines. Although no significant changes in customer retention could be detected from the SQL analysis, orders received after promised delivery time consistantly received lower ratings than orders received early or on time.
 
+In order to identify potential drivers behind these delays, the analysis explored several operational dimensions, including time of day, day of week, order size however without success.
+While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
 
+Instead, the most meaningful insights derived from the geographic analysis examining delivery performance on an area basis.
+From the geopgraphic analysis, two distinct patterns were highlighted aknowledging some areas 
 
-Yet, due to the limitations of the data 
-
-
-In order to identify potential drivers behind delivery delays, the analysis explored several operational dimensions, including time of day, day of week, order size, and geographic area performance. While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
-
-Instead, the most meaningful insights emerged from the geographic analysis where two distinct patterns were highlighted.
 First, some areas consistently experienced a high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This may indicate structural challenges such as courier supply imbalances, inefficient delivery coverage, or sustained demand pressure within specific zones.
 
 Second, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. This suggests that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Potential contributing factors may include traffic congestion, longer travel distances, routing inefficiencies, or temporary overload during peak demand periods.
