@@ -37,7 +37,7 @@ CREATE TABLE glovo_raw (
 )
 
 -- Step 2: Create cleaned working table
--- This preserved the raw data and allowed transformations on a separate table
+-- This preserved the raw data and allowed cleaning and transformations on a separate table
 
 CREATE TABLE glovo_clean AS
 SELECT *
@@ -46,39 +46,40 @@ FROM glovo_raw
 -- Step 3: Convert relevant columns to appropriate data types
 
 ALTER TABLE glovo_clean
-ALTER COLUMN order_date TYPE TIMESTAMP USING order_date::timestamp;
+ALTER COLUMN order_date TYPE TIMESTAMP USING order_date::timestamp
 
 ALTER TABLE glovo_clean
-ALTER COLUMN order_total TYPE NUMERIC USING order_total::numeric;
+ALTER COLUMN order_total TYPE NUMERIC USING order_total::numeric
 
 ALTER TABLE glovo_clean
-ALTER COLUMN number_product TYPE INTEGER USING number_product::integer;
+ALTER COLUMN number_product TYPE INTEGER USING number_product::integer
 
 ALTER TABLE glovo_clean
-ALTER COLUMN total_quantity TYPE INTEGER USING total_quantity::integer;
+ALTER COLUMN total_quantity TYPE INTEGER USING total_quantity::integer
 
 ALTER TABLE glovo_clean
-ALTER COLUMN total_profit TYPE NUMERIC USING total_profit::numeric;
+ALTER COLUMN total_profit TYPE NUMERIC USING total_profit::numeric
 
 ALTER TABLE glovo_clean
-ALTER COLUMN rating TYPE NUMERIC USING rating::numeric;
+ALTER COLUMN rating TYPE NUMERIC USING rating::numeric
 
 ALTER TABLE glovo_clean
-ALTER COLUMN delivery_time_minutes TYPE NUMERIC USING delivery_time_minutes::numeric;
+ALTER COLUMN delivery_time_minutes TYPE NUMERIC USING delivery_time_minutes::numeric
 
 ALTER TABLE glovo_clean
-ALTER COLUMN distance_km TYPE NUMERIC USING distance_km::numeric;
+ALTER COLUMN distance_km TYPE NUMERIC USING distance_km::numeric
 
 -- Step 4: Check for duplicate order_id
 -- No duplicates found, indicating each order_id was unique
 
-SELECT order_id, COUNT(*)
+SELECT order_id, 
+COUNT(*)
 FROM glovo_clean
 GROUP BY order_id
 HAVING COUNT(*) > 1
 
 -- Step 5: Remove redundant columns
--- These columns duplicated timing information and were not needed
+-- These columns duplicated timing information and were not needed for the analysis, and therefore removed.
 
 ALTER TABLE glovo_clean
 DROP COLUMN promised_time,
@@ -94,7 +95,7 @@ SELECT
 FROM glovo_clean;
 
 -- Step 7: Create delivery performance column
--- This allowed the analysis to classify deliveries into Early, On Time, and Late
+-- This step was performed to classify deliveries into Early, On Time, and Late, facilitating impact analysis across the three categories.
 
 ALTER TABLE glovo_clean
 ADD COLUMN delivery_performance TEXT
@@ -109,4 +110,9 @@ CASE
     WHEN delivery_time_minutes BETWEEN -2 AND 2 THEN 'On Time'
     ELSE 'Late'
 END
+
+
+Following the cleaning phase, SQL was used to perform an investigative analysis to find painpoints causing late deliveries and decreased 
+customer satisfaction.
+The full process can be accessed here: [SQL Analysis](sql-analysis)
 
