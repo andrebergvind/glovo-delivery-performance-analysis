@@ -41,8 +41,7 @@ SELECT
 FROM glovo_clean
 GROUP BY delivery_performance
 
--- Insight:
--- Distance is nearly identical across all categories indicating that its not a driver of delays
+-- Insight: Distance is nearly identical across all categories indicating that its not a driver of delays
 
 
 
@@ -62,8 +61,7 @@ GROUP BY hour
 ORDER BY hour
 
 -- Insight:
--- Late deliveries remain consistently high throughout the day (47–51%)
--- Time of day is not a major driver
+-- Late deliveries remain consistently high throughout the day (47–51%). As no big difference can be drawn, time of day is not a major driver.
 
 
 -- 5. DAY OF WEEK ANALYSIS
@@ -81,8 +79,7 @@ GROUP BY day_name
 ORDER BY pct_late DESC
 
 -- Insight:
--- All days fall within a very narrow range (~48–50% late)
--- No meaningful day level variation
+-- All days fall within a very narrow range (48–50% late), indicating no meaningful day level variation
 
 
 
@@ -99,8 +96,7 @@ GROUP BY month
 ORDER BY month
 
 -- Insight:
--- Ratings for late deliveries are stable across months
--- No seasonal pattern observed
+-- Ratings for late deliveries are stable across months and therefore, no seasonal pattern is observed as a driver of late deliveries.
 
 
 -- 7. ORDER SIZE VS DELIVERY PERFORMANCE
@@ -112,8 +108,7 @@ SELECT
 FROM glovo_clean
 GROUP BY delivery_performance
 
--- Insight:
--- Order size is almost identical across categories indicating that its not a driver of delays
+-- Insight: Order size is almost identical across categories indicating that it iss not a driver of delays
 
 
 
@@ -134,26 +129,28 @@ HAVING COUNT(*) > 100
 ORDER BY late_percentage DESC
 LIMIT 10
 
--- Insight:
--- Some areas exceed 57–60% late deliveries vs ~ 49% overall
--- Area plays a key role
+-- Insight: Some areas exceed 57–60% late deliveries and the overall falls in at approximately 49%, indicating that area plays a key role
 
 
 -- 9. AREA DELAY SEVERITY
--- Checking if delays are worse or just more frequent
+-- Examining which areas experience the most severe delays
 
-SELECT 
+SELECT
     area,
-    ROUND(AVG(delivery_time_minutes), 2) AS avg_delay
+    ROUND(AVG(
+        CASE 
+            WHEN delivery_performance = 'Late' 
+            THEN EXTRACT(EPOCH FROM (actual_delivery_time - promised_delivery_time)) / 60
+        END
+    )::numeric, 2) AS avg_late_delay_minutes
 FROM glovo_clean
 GROUP BY area
 HAVING COUNT(*) > 100
-ORDER BY avg_delay DESC
-LIMIT 10
+ORDER BY avg_late_delay_minutes DESC
+LIMIT 10;
 
--- Insight:
--- Delay duration is similar across areas (5.7–6.1 min)
--- Issue is mainly frequency, not severity
+-- Insight: All areas presented showcase 12 minutes plus, way above the average 4.37 delay average.
+
 
 
 -- 10. DELIVERY PARTNER ANALYSIS
@@ -173,8 +170,7 @@ SELECT
 FROM glovo_clean
 
 -- Insight:
--- Each partner ID is unique and can therefore not evaluate performance
--- Field behaves like an order identifier
+-- Each partner ID is unique and can therefore not evaluate performance as field behaves like an order identifier
 
 
 -- 11. DELIVERY PERFORMANCE VS RATINGS
@@ -188,8 +184,7 @@ FROM glovo_clean
 GROUP BY delivery_performance
 
 -- Insight:
--- Late deliveries have significantly lower ratings (3.58 vs 4.50)
--- Strong negative impact on customer satisfaction
+-- Late deliveries have significantly lower ratings (3.58 vs 4.50) indicating a strong negative impact on customer satisfaction
 
 
 
