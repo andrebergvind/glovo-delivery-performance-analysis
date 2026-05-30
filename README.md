@@ -51,11 +51,11 @@ She has therefore requested my help to identify the key factors driving these is
 
 To address this challenge, it was essential to move beyond surface level metrics and understand where delays occur most frequently, how severe they are, and what underlying factors contribute to them.
 
-The analysis was guided by the following main question:
+### The analysis was guided by the following main question:
 
 **How can Glovo reduce late deliveries while ensuring a positive customer experience?**
 
-To answer this, the analysis focused on three supporting questions:
+To facilitate this, the analysis incorporated three supporting questions:
 
 - How do delivery delays impact customer ratings?
 - Which areas experience the highest share of late deliveries?
