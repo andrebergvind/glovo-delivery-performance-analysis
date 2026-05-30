@@ -150,19 +150,23 @@ Therefore, these areas should be targeted separately for further investigative a
 
 The following recommendations are based on the identified delivery performance patterns and aim to improve both reliability and customer satisfaction.
 
-- ### Increase courier allocation in high late frequency delivery areas to improve reliability
-  Use demand forecasting to better align courier supply with peak order volumes. Pre position drivers in high demand zones to reduce waiting times and improve delivery punctuality. Improving On Time performance is expected to increase customer satisfaction and ratings.
+Although, without successfully defining the key factors driving the delays, recommendations attemt to provide suggestions for potential issues while also encouraging further investigation.
 
-- ### Optimize routing and dispatching strategies in underperforming areas
-  Although dispatch level data was not available in this dataset, improving routing and dispatch logic is a key operational lever in delivery performance. Assigning orders to the closest available driver, incorporating real time traffic conditions, and introducing buffer times during peak hours can help reduce delays and improve delivery reliability.
+### Areas with Frequently Ocurring Delays
+- Increase courier allocation in high late frequency delivery areas to ensure sufficient supply for the demand.
+- Pre position drivers in high demand zones to reduce waiting times and improve delivery punctuality. Improving on-time performance is expected to increase customer satisfaction and ratings.
 
-- ### Address areas with high delay severity through targeted operational interventions
-  Areas with extreme delay durations should be analyzed separately to identify root causes such as long distances, traffic bottlenecks, or operational inefficiencies. Implement targeted solutions such as route optimization, delivery zone adjustments, or driver training.
 
-- ### Operationalize customer ratings as a leading performance signal, not just an outcome metric
-  Customer ratings should be actively integrated into operational decision making, rather than used solely as a post delivery feedback metric. 
-  Delivery delays are clearly associated with poorer ratings, according to the data, suggesting that operational performance has a direct impact on customer satisfaction. Glovo could leverage this to detect high risk areas early and prioritise targeted interventions by connecting ratings with delivery time data at the area and time level.
+### Areas with Severe Delays
+-  Optimise routing and dispatching strategies in underperforming areas.
+Although dispatch level data was not available in this dataset, improving routing and dispatch logic is a key operational lever in delivery performance. Assigning orders to the closest available driver, incorporating real time traffic conditions, and introducing buffer times can help reduce delays and improve delivery reliability.
+- Provide training for all drivers to ensure they are proficient and efficient when delivering orders.
 
+
+### Continuous Monitoring & General Courtesy
+- Monitor delivery performance metrics on a regular basis to avoid similar problems in the future.
+- If severe delays occur, provide affected customer with discounted prices or vouchers.
+ 
 
 
 ## Limitations & Further Analysis Opportunities
@@ -174,8 +178,7 @@ The following recommendations are based on the identified delivery performance p
   The dataset does not include information on dispatch timing, assignment logic, or driver allocation. As a result, it was not possible to evaluate how dispatch decisions impact delivery delays.
 
 - **Short-term retention analysis limitations**  
-  To fully assess customer churn, a longitudinal analysis would be required, using a data over an extended time period.
+  As the dataset only contained 50.000 rows, where no customer had made more than three purchases, customer behaviour following late deliveries provides little intel on customer churn in long-term
+  To fully assess customer churn, a longitudinal analysis would be required, using data over derived from an extended period of time.
 
 
-Additionally, the dataset did not contain dispatch level information such as courier assignment timing, driver availability, or real-time traffic conditions. This limits the ability to fully explain why certain areas consistently underperform compared to others.
-Therefore, while the analysis successfully identifies where operational challenges are most concentrated and how they impact customer satisfaction, further operational data would be required to determine the precise root causes behind these delivery inefficiencies.
