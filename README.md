@@ -111,7 +111,8 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 
 ## Analysis
 
-The analysis demonstrates that late deliveries represent a significant operational challenge for Glovo, with approximately 49% of all orders being delivered after the promised time. Given the time sensitive nature of Q-Commerce, this indicates a substantial reliability issue that may negatively affect both customer experience and operational performance.
+
+orders with late deliveries consistently receiving lower ratings than early or on-time deliveries.
 
 In order to identify potential drivers behind delivery delays, the analysis explored several operational dimensions, including time of day, day of week, order size, and geographic area performance. While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
 
@@ -120,7 +121,7 @@ First, some areas consistently experienced a high share of late deliveries, sugg
 
 Second, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. This suggests that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Potential contributing factors may include traffic congestion, longer travel distances, routing inefficiencies, or temporary overload during peak demand periods.
 
-These findings become particularly relevant when analyzing customer satisfaction outcomes. The data shows a clear relationship between delivery performance and customer ratings, with average ratings declining from approximately 4.5 for on-time or early deliveries to 3.58 for late deliveries. The dropping customer ratings clearly suggest that delivery reliability is not only an operational KPI, but also a direct driver of customer perception and platform experience.
+These findings become particularly relevant when analysing customer satisfaction outcomes. The data shows a clear relationship between delivery performance and customer ratings, with average ratings declining from approximately 4.5 for on-time or early deliveries to 3.58 for late deliveries. The dropping customer ratings clearly suggest that delivery reliability is not only an operational KPI, but also a direct driver of customer perception and platform experience.
 
 However, although the analysis was able to identify specific areas associated with poorer delivery performance, the dataset does not allow for definitive conclusions regarding the exact operational causes behind these delays.
 
@@ -129,15 +130,23 @@ One important limitation is that couriers were assigned new identifiers for each
 Additionally, the dataset did not contain dispatch level information such as courier assignment timing, driver availability, or real-time traffic conditions. This limits the ability to fully explain why certain areas consistently underperform compared to others.
 Therefore, while the analysis successfully identifies where operational challenges are most concentrated and how they impact customer satisfaction, further operational data would be required to determine the precise root causes behind these delivery inefficiencies.
 
-Overall, the analysis suggests that location-based operational performance is one of the strongest indicators of delivery reliability within the dataset. Therefore, by identifying underperforming areas and understanding the nature of their delivery issues, Glovo would be better positioned to prioritize operational improvements and allocate resources more effectively.
 
 
 ## Conclusion
+
+Following the analysis, findings demonstrate that late deliveries represent a significant operational challenge for Glovo with approximately 49% of all orders being delivered after the promised time. Given the time sensitive nature of Q-Commerce, it comes as no surprise that customer ratings are directly affected by late deliveries, seeing customer ratings declining as delivery performance worsens.
+
+
+However, to identify the exact issues driving these delays 
+
 
 An important insight from the analysis is that delivery performance issues cannot be approached through a single generalized solution. Different areas appear to experience different types of operational challenges, requiring more targeted interventions depending on whether the primary issue relates to delay frequency, delay severity, or broader operational instability.
 
 What we can establish however, is that these issues certainly affect overall customer satisfaction and reliability.
 As customer satisfaction declines, delivery delays evolve from being purely an operational inefficiency into a broader business risk, which could directly affect customer retention, brand perception, and long term revenue potential.
+
+
+Overall, the analysis suggests that location-based operational performance is one of the strongest indicators of delivery reliability within the dataset. Therefore, by identifying underperforming areas and understanding the nature of their delivery issues, Glovo would be better positioned to prioritise operational improvements and allocate resources more effectively.
 
 ## Recommendations
 
