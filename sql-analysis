@@ -7,7 +7,7 @@
 
 
 -- 1. DELIVERY TIME SUMMARY
--- Understanding overall delivery performance
+-- Reason: Understanding overall delivery performance and lateness of orders.
 
 SELECT
     MIN(delivery_time_minutes) AS min_delivery_time,
@@ -15,12 +15,11 @@ SELECT
     ROUND(AVG(delivery_time_minutes), 2) AS avg_delivery_time
 FROM glovo_clean
 
--- Insight:
--- Deliveries are on average late, with delays reaching up to 30 minutes
+-- Insight: Deliveries are on average late, with delays reaching up to 30 minutes.
 
 
 -- 2. DELIVERY PERFORMANCE DISTRIBUTION
--- How deliveries are distributed across categories
+-- Reason: To understand how deliveries are distributed across performance categories
 
 SELECT
     delivery_performance,
@@ -29,8 +28,7 @@ SELECT
 FROM glovo_clean
 GROUP BY delivery_performance
 
--- Insight:
--- Nearly half of all deliveries are late (~49%)
+-- Insight: Approximately half of all orders are delivered later than expected.
 
 
 
