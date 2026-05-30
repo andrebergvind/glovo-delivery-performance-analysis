@@ -145,14 +145,16 @@ Nonetheless, the analysis does present useful insights into areas in which Glovo
 
 However, as different areas appear to experience different types of operational challenges, presumably, delivery performance issues cannot be approached through a single generalised solution. 
 
-Therefore, these areas should be targeted separately for further investigative analyses.
+Therefore, these areas should be targeted separately when developing strategies to prevent future delays.
+To determine what these strategies should be, additional analysis could be beneficial, as further investigation may help uncover the underlying factors contributing to poor delivery performance.
+
 
 
 ## Recommendations
 
 The following recommendations are based on the identified delivery performance patterns and aim to improve both reliability and customer satisfaction.
 
-Although, without successfully defining the key factors driving the delays, recommendations attemt to provide suggestions for potential issues while also encouraging further investigation.
+Although, without successfully defining the key factors driving the delays, recommendations attempt to provide suggestions for potential issues while also encouraging further investigation.
 
 ### Areas with Frequently Ocurring Delays
 - Increase courier allocation in high late frequency delivery areas to ensure sufficient supply for the demand.
