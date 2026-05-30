@@ -111,8 +111,14 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 
 ## Analysis
 
+Glovos current delivery performance is evidentially far below its expectations. Out of 50,000 orders, approximately 49% were recorded as late, meaning that almost one in every second customer receives their order later than promised. 
 
-orders with late deliveries consistently receiving lower ratings than early or on-time deliveries.
+As a result of late deliveries, the average customer rating inevitably declines. Orders with late deliveries consistently receive lower ratings than early or on-time deliveries.
+
+
+
+Yet, due to the limitations of the data 
+
 
 In order to identify potential drivers behind delivery delays, the analysis explored several operational dimensions, including time of day, day of week, order size, and geographic area performance. While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
 
@@ -140,7 +146,14 @@ Following the analysis, findings demonstrate that late deliveries represent a si
 However, to identify the exact issues driving these delays 
 
 
-An important insight from the analysis is that delivery performance issues cannot be approached through a single generalized solution. Different areas appear to experience different types of operational challenges, requiring more targeted interventions depending on whether the primary issue relates to delay frequency, delay severity, or broader operational instability.
+While customer return behavior was explored, no significant churn was observed from customers receiving their orders late. 
+Although this insight suggests that late deliveries may not immediately impact short-term repeat purchases, potential long term behavioral effects can not be dismissed, and would require a more lonngitudinal analysis, examining data over an extended time period.
+
+
+
+
+
+However, notable is that delivery performance issues cannot be approached through a single generalised solution. Different areas appear to experience different types of operational challenges, requiring more targeted interventions depending on whether the primary issue relates to delay frequency, delay severity, or broader operational instability.
 
 What we can establish however, is that these issues certainly affect overall customer satisfaction and reliability.
 As customer satisfaction declines, delivery delays evolve from being purely an operational inefficiency into a broader business risk, which could directly affect customer retention, brand perception, and long term revenue potential.
@@ -172,10 +185,10 @@ The following recommendations are based on the identified delivery performance p
 - **Driver level performance could not be evaluated**  
   While it would be valuable to assess whether certain drivers consistently underperform, the dataset assigns a unique identifier to each delivery instance rather than a persistent driver ID. This prevents tracking individual driver performance over time.
 
-- **Dispatching process could not be analyzed**  
+- **Dispatching process could not be analysed**  
   The dataset does not include information on dispatch timing, assignment logic, or driver allocation. As a result, it was not possible to evaluate how dispatch decisions impact delivery delays.
 
 - **Short-term retention analysis limitations**  
-  While customer return behavior was explored, no significant differences were observed between delivery performance groups. This suggests that late deliveries may not immediately impact repeat purchases. However, potential long term behavioral effects, such as changes in ordering frequency or customer churn over time, could not be fully assessed within the scope of this dataset.
+  To fully assess customer churn, a longitudinal analysis would be required, using a data over an extended time period.
 
 
