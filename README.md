@@ -44,18 +44,21 @@ Yet, maintaining consistent delivery performance at scale remains a significant 
 
 **Scenario**
 
-Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after the promised time, indicating potential inefficiencies within the delivery process. These delays do not only impact immediate service quality but can also weaken customer satisfaction and long term platform performance.
+Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after promised delivery time. 
 
-To address this challenge, it is essential to move beyond surface level metrics and understand where delays occur most frequently, how severe they are, and what underlying factors contribute to them.
+The operations manager has become concerned about the increasing numbers of late deliveries fearing they could reduce customer ratings and ultimately lead to higher customer churn.
+She has therefore requested my help to identify the key factors driving these issues and provide recommendations to improve delivery reliability and customer experience.
+
+To address this challenge, it was essential to move beyond surface level metrics and understand where delays occur most frequently, how severe they are, and what underlying factors contribute to them.
 
 This analysis was guided by the following main question:
 
-**How can Glovo reduce late deliveries and ensure a good customer satisfaction?**
+**How can Glovo reduce late deliveries while ensuring a positive customer experience?**
 
 To answer this, the analysis focused on three supporting questions:
 
-- Which areas experience the highest share of late deliveries?
 - How do delivery delays impact customer ratings?
+- Which areas experience the highest share of late deliveries?
 - Which operational patterns are most associated with delayed deliveries?
 
 
