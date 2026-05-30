@@ -114,6 +114,5 @@ END
 
 Following the cleaning phase, SQL was used to perform an investigative analysis to find painpoints causing late deliveries and decreased 
 customer satisfaction.
-The full process can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql-analysis)
-
+The full process can be accessed here: [SQL Analysis](sql-analysis.md)
 
