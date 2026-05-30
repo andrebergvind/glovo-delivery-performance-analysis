@@ -96,7 +96,7 @@ GROUP BY month
 ORDER BY month
 
 -- Insight:
--- Ratings for late deliveries are stable across months and therefore, no seasonal pattern is observed as a driver of late deliveries.
+-- Ratings for late deliveries are stable across months and therefore, no seasonal pattern is observed as a driver of lower customer rating.
 
 
 -- 7. ORDER SIZE VS DELIVERY PERFORMANCE
