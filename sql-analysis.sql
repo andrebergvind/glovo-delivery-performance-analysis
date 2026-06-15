@@ -201,6 +201,6 @@ GROUP BY delivery_performance
 -- - The frequency of delays is a major problem in some areas, in other areas, the severity of the delays is worse.
 -- - Late deliveries reduce customer satisfaction
 
--- This suggests that delays are likely caused by operational or systemic inefficiencies not captured in the dataset.
+-- As no contributing factor analysed show significant impact on delays, findings suggest that thes are likely caused by operational or systemic inefficiencies not captured in the dataset.
 
 
