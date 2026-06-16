@@ -126,13 +126,13 @@ However, notable, is that some areas are experiencing delays more frequently tha
 At the same time, there are areas experiencing deliveries less frequently, but when they do occur, they are more severe. 
 
 These raise the question about the supply and accessability of couriers, specifically in areas with frequent delays. 
-Does Glovo have enough drivers to meet the demand of deliveries? 
-Could the drivers be allocated more efficiently? 
+Does Glovo have enough drivers to meet the demand of deliveries?    
+Could the drivers be allocated more efficiently?      
 Perhaps, these areas could benefit from additional hiring, and or a more efficient distribution, nearby or around restaurant hotspots.
 
 Additionally, competency amongst the couriers, and delivery routes may also be examined, particularly in areas with severe delays.
-Have the drivers been given a proper training?
-Are routes optimised?
+Have the drivers been given a proper training?    
+Are routes optimised?    
 Potentially, some drivers need to undergo futher education on how to interpret maps and routs for optimal use.
 
 However, without being able pinpoint exactly what is causing these delays, no definitive operational driver could be identified.
