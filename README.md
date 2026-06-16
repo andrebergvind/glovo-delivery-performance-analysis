@@ -110,21 +110,33 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 
 ## Analysis
 
-Glovos current delivery performance is evidentially far below its expectations. Out of 50,000 orders, approximately 49% were recorded as late, meaning that almost one in every second customer receives their order later than promised. 
+Glovos current delivery performance is evidentially far below its expectations. Out of 50,000 orders, approximately 49% are recorded as late, meaning that almost one in every second customer receives their order later than promised. 
 
-As a result of late deliveries, the average customer rating inevitably declines. Although no significant changes in customer retention could be detected from the SQL analysis, orders received after promised delivery time consistantly received lower ratings than orders received early or on time.
+As a result of late deliveries, the average customer rating declines. 
+SQL queries used to assess the direct impact on customer churn show no significant changes, presenting an interesting situation. 
+Although customers appear less satisfied when deliveries are delayed, they do not seem to immediately abandon the platform. This could indicate that other factors, such as convenience, restaurant variety, or pricing, play a greater role in customer retention than delivery punctuality alone. 
 
-In order to identify potential drivers behind these delays, the analysis explored several operational dimensions, including time of day, day of week, order size and travel distances, however without revealing any significant patterns.
+Nevertheless, the decline in ratings suggests that late deliveries are negatively impacting the customer experience, even if that impact is not yet reflected in customer churn.
+Therefore, uncovering operational issues still remains an important task. 
+
+In order to identify potential drivers behind these delays, SQL queries explored several operational dimensions, including time of day, day of week, order size, travel distances, and courier performance, however without revealing any significant patterns.
 While some variation was observed across time periods and order characteristics, these factors did not reveal sufficiently strong or consistent patterns to explain the overall scale of delays.
 
-Instead, the most meaningful insights derived from the geographic analysis examining delivery performance on an area basis.
-Two distinct patterns were became apparent, highlighting that delay issues are not universal but occur in different ways depending on the location.
+However, notable, is that some areas are experiencing delays more frequently than others, contributing to a larger share of the late deliveries.
+At the same time, there are areas experiencing deliveries less frequently, but when they do occur, they are more severe. 
 
-Primarily, some areas showcased a consistent high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This outcome raised the question of structural challenges such as courier supply imbalances and inefficient delivery coverage. However, since courier IDs were identifiers that seemingly were generated for each delivery, these imbalances could not be investigated further.
+These raise the question about the supply and accessability of couriers, specifically in areas with frequent delays. 
+Does Glovo have enough drivers to meet the demand of deliveries? 
+Could the drivers be allocated more efficiently? 
+Perhaps, these areas could benefit from additional hiring, and or a more efficient distribution, nearby or around restaurant hotspots.
 
-In contrast, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. The result suggested that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. Factors may include traffic congestion, routing inefficiencies, or temporary overload during peak demand periods. 
+Additionally, competency amongst the couriers, and delivery routes may also be examined, particularly in areas with severe delays.
+Have the drivers been given a proper training?
+Are routes optimised?
+Potentially, some drivers need to undergo futher education on how to interpret maps and routs for optimal use.
 
-Unable to pursue the potential factors causing these issues due to limitation of data, the severity of delays was merely concluded to occur within these areas, yet without being able to determine exactly what they depend on.
+However, without being able pinpoint exactly what is causing these delays, no definitive operational driver could be identified.
+Nonetheless, the analysis does present useful insights into areas in which Glovo should focus its improvements efforts.
 
 
 ## Conclusion
@@ -133,31 +145,31 @@ Following the analysis, findings demonstrate that late deliveries represent a si
 
 As customer ratings decline, delivery delays evolve from being purely an operational inefficiency into a broader business risk, which could directly affect customer retention, brand perception, and long-term revenue potential.
 
-However, while customer return behavior was explored, no significant churn was observed from customers receiving their orders late. 
-Although this insight suggests that late deliveries may not immediately impact short-term repeat purchases, potential long term behavioral effects should not be dismissed, and would require a more lonngitudinal analysis, examining data over an extended period of time.
+The most meaningful insights derived from the geographic analysis examining delivery performance on an area basis.
+Two distinct patterns became apparent, highlighting that delay issues are not universal but occur in different ways depending on the location.
 
-Notable, is that some areas are experiencing delays more frequently than others, contributing to a larger share of the late deliveries.
-At the same time, there are areas experiencing deliveries less frequently, but when they do occur, they are more severe. 
+Primarily, some areas showcased a consistent high share of late deliveries, suggesting persistent operational inefficiencies rather than isolated incidents. This outcome raised the question of structural challenges such as courier supply imbalances and inefficient delivery coverage. However, since courier IDs were identifiers that seemingly were generated for each delivery, these imbalances could not be investigated further.
 
-Although, without being able pinpoint exactly what is causing these delays, no definitive operational driver could be identified.
-Nonetheless, the analysis does present useful insights into areas in which Glovo should focus its improvements efforts.
+In contrast, other areas displayed lower frequencies of late deliveries but instead significantly higher average delay durations when delays did occur. The findings suggest that some operational issues may not occur frequently, but when they do, they create severe disruptions to delivery performance. 
 
-However, as different areas appear to experience different types of operational challenges, presumably, delivery performance issues cannot be approached through a single generalised solution. 
+Unable to pursue the potential factors causing these issues due to limitation of data, the severity of delays was merely concluded to occur within these areas, yet without being able to determine exactly what they depend on.
+
+However, as areas appear to experience different types of operational challenges, presumably, delivery performance issues cannot be approached through a single generalised solution. 
 
 Therefore, these areas should be targeted separately when developing strategies to prevent future delays.
 To determine what these strategies should be, additional analysis could be beneficial, as further investigation may help uncover the underlying factors contributing to poor delivery performance.
 
 
-
 ## Recommendations
 
-The following recommendations are based on the identified delivery performance patterns and aim to improve both reliability and customer satisfaction.
+The following recommendations are based on the identified delivery performance patterns, and aim to improve both reliability and customer satisfaction.
 
 Although, without successfully defining the key factors driving the delays, recommendations attempt to provide suggestions for potential issues while also encouraging further investigation.
 
 ### Areas with Frequently Ocurring Delays
 - Increase courier allocation in high late frequency delivery areas to ensure sufficient supply for the demand.
 - Pre position drivers in high demand zones to reduce waiting times and improve delivery punctuality. Improving on-time performance is expected to increase customer satisfaction and ratings.
+- Offer incentives such as small cash bonuses for drivers who complete a target of x number of deliveries without delay. 
 
 
 ### Areas with Severe Delays
