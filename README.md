@@ -38,12 +38,11 @@ Using delivery data from Glovo (India market), sourced from Kaggle, i explore op
 In highly competitive, time sensitive marketplaces, delivery reliability is a critical driver of customer satisfaction and platform performance. Even small inefficiencies in operations can scale rapidly, leading to delays, decreased service quality, and potential customer churn.
 
 As a leading Q-Commerce platform, Glovo relies heavily on efficient logistics and timely deliveries to maintain a strong customer experience.
-Yet, maintaining consistent delivery performance at scale remains a significant operational challenge, particularly in complex and high demand urban environments, as showcased in this analysis.
+Yet, maintaining consistent delivery performance at scale remains a significant operational challenge, particularly in complex and high demand urban environments.
 
 ## Business Problem
 
-### Scenario
-
+### Scenario  
 Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after promised delivery time. 
 
 The operations manager has become concerned about the increasing numbers of late deliveries fearing they could reduce customer ratings and ultimately lead to higher customer churn.
