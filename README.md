@@ -6,7 +6,7 @@ This project presents an operations and logistics performance analysis. The reas
 
 Using delivery data from Glovo (India market), sourced from Kaggle, i explore operational patterns with the objective of providing inisghts into the factors driving late deliveries and lower customer ratings.
 
-**The scenario used for the project is hypothetical and was developed solely for educational and portfolio purposes.**
+**The scenario used for the project is hypothetical and was developed solely for educational and portfolio purposes**
 
 
 ## Project Structure
