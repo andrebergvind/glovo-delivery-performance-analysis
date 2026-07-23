@@ -48,10 +48,10 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 
  ## Dashboard
 
-![Glovo Dashboard](glovo-dashboard.png)
+![Glovo Dashboard](dashboard/glovo-dashboard.png)
 
 
-[View Interactive Dashboard](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[View Dashboard on Tableau](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 ## Key Insights
