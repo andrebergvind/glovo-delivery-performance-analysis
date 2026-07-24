@@ -1,11 +1,11 @@
-# Glovo Delivery Performance Analysis
+# 🚚 Glovo Delivery Performance Analysis
 
-## Project Overview
+## 📋 Project Overview
 
-This project presents an operations and logistics performance analysis. Using delivery data from Glovo (India market), sourced from Kaggle, i explore operational patterns with the objective of providing inisghts into the factors driving late deliveries and lower customer ratings.
+This project presents an operations and logistics performance analysis. Using delivery data from Glovo (India market), sourced from Kaggle, it explores operational patterns with the objective of providing inisghts into the factors driving late deliveries and lower customer ratings.
 
 
-### Business Problem
+### 🎯 Business Problem
 
 Despite the importance of timely deliveries, Glovo has found themselves in a situation where a substantial share of orders are completed after promised delivery time. 
 
@@ -13,40 +13,26 @@ The operations manager has become concerned about the increasing numbers of late
 She has therefore requested my help to identify the key factors driving these issues and provide recommendations to improve delivery reliability and customer experience.
 
 
-### Tools Used
+### 🛠️ Tools Used
 
-- Excel / CSV: Data handling and initial exploration
+- Excel: Data handling and initial exploration
 - SQL: Data cleaning, transformation, and analysis
 - Tableau: Data visualization
 
-## Data Cleaning & Transformation
+## 🧹🔎 Data Cleaning & Exploration
 
-**Excel**
-
-The dataset was sourced from Kaggle and downloaded as a CSV file. Excel was used for initial inspection of the data, including reviewing column structures, checking for inconsistencies, and performing a high level exploration including filtering, aggregations, and pivot tables before moving into a more robust analysis environment.
-
-The original dataset can be accessed and downloaded here: [Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/csv/orders_details_raw_data.csv)
-
-**SQL** 
-
-Following the initial inspection, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types and removing duplicate columns.
+Following an initial exploration in Excel, SQL was used to prepare the data for analysis. Using PostgreSQL, the dataset was cleaned by correcting data types and removing duplicate columns.
 In addition, to facilitate the analysis, new columns were created, such as delivery time differences and delivery performance categories, (Early, On Time, Late).
 The full SQL cleaning and transformation process can be accessed here: [SQL Cleaning](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql/sql-cleaning.sql)
 
-The transformed dataset can be accessed and downloaded here:
-[Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/csv/glovo_analysis_clean_data.csv)
+[Raw Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/csv/orders_details_raw_data.csv)
+| [Clean Data](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/csv/glovo_analysis_clean_data.csv)
 
 
-With the data cleaned and transformed, SQL was also used to perform exploratory analysis, aggregations, and segmentations to identify patterns in delivery performance to uncover key operational insights. Among other factors, the analysis examined the impact of time of day, day of week, and order size on delivery performance. The full SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql/sql-analysis.sql)
-
-**Tableau**
-
-Ultimately, the dataset was transferred into Tableau, which was used to build interactive dashboards that visualise delivery performance and key metrics.
-The tool enabled the creation of KPI summaries, distribution charts, and geographic comparisons, allowing for clear communication of insights.
-Following the discoveries made through the SQL analysis, the dashboard focuses on highlighting the operational areas most greatly affecting delivery performance at this time.
+With the data cleaned and transformed, SQL was also used to perform exploratory analysis to identify patterns in delivery performance to uncover key operational insights. Among other factors, the analysis examined the impact of time of day, day of week, and order size on delivery performance. The full SQL analysis queries can be accessed here: [SQL Analysis](https://github.com/andrebergvind/glovo-delivery-performance-analysis/blob/main/sql/sql-analysis.sql)
 
 
- ## Dashboard
+ ## 📊 Dashboard
 
 ![Glovo Dashboard](dashboard/glovo-dashboard.png)
 
@@ -54,7 +40,7 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 [View Dashboard on Tableau](https://public.tableau.com/views/GlovoE-CommerceAnalysis/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
-## Key Insights
+## 💡 Key Insights
 
 - Approximately 49% of orders are delivered later than promised.
 - Late deliveries inevitably affect customer ratings negatively.
@@ -62,7 +48,7 @@ Following the discoveries made through the SQL analysis, the dashboard focuses o
 - The dataset does not provide sufficient information to identify the key factors driving late deliveries in these areas.
 
 
-## Recommendations
+## ✅ Recommendations
 
 ### Areas with Frequently Ocurring Delays
 - Increase courier allocation in high late frequency delivery areas to ensure sufficient supply for the demand.
@@ -81,7 +67,7 @@ Although dispatch level data was not available in this dataset, improving routin
 - If severe delays occur, provide affected customer with discounted prices or vouchers.
  
 
-## Limitations & Further Analysis Opportunities
+## ⚠️ Limitations & Further Analysis Opportunities
 
 - **Driver level performance could not be evaluated**  
   While it would be valuable to assess whether certain drivers consistently underperform, the dataset assigns a unique identifier to each delivery instance rather than a persistent driver ID. This prevents tracking individual driver performance over time.
