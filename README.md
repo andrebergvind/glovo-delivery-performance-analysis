@@ -58,12 +58,12 @@ With the data cleaned and transformed, SQL was also used to perform exploratory 
 ### Areas with Severe Delays
 -  Optimise routing and dispatching strategies in underperforming areas.
 Although dispatch level data was not available in this dataset, improving routing and dispatch logic is a key operational lever in delivery performance. Assigning orders to the closest available driver, incorporating real time traffic conditions, and introducing buffer times can help reduce delays and improve delivery reliability.
-- Provide training for all drivers to ensure they are proficient and efficient when delivering orders.
+- Provide training for drivers to ensure they are proficient and efficient when delivering orders, improving on service level agreement and reducing the risks of severe negative customer impact.
 
 
 ### Continuous Monitoring & General Courtesy
 - Monitor delivery performance metrics on a regular basis to avoid similar problems in the future.
-- If severe delays occur, provide affected customer with discounted prices or vouchers.
+- If severe delays occur, provide affected customers with discounted prices or vouchers in order to mitigate negative reviews and maintain a stable customer relationship.
  
 
 ## ⚠️ Limitations & Further Analysis Opportunities
